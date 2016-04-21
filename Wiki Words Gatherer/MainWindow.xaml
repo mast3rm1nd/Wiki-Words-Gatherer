@@ -1,0 +1,19 @@
+﻿<Window x:Class="Wiki_Words_Gatherer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="236" Width="525">
+    <Grid>
+        <TextBox x:Name="TextBox_StartingPage" HorizontalAlignment="Left" Height="23" Margin="96,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="402" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLines="1" Text="https://en.wikipedia.org/wiki/Saturn"/>
+        <Label Content="Start from:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBox_ParsingDepth" HorizontalAlignment="Left" Height="23" Margin="113,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="39" Text="0" MaxLines="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label Content="Parsing depth:" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBox_MinLength" HorizontalAlignment="Left" Height="23" Margin="113,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="39" Text="4" MaxLines="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label Content="Min. word length:" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBox_MaxLength" HorizontalAlignment="Left" Height="23" Margin="113,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="39" MaxLines="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label Content="Max. word length:" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+        <Label Content="(empty = no limit)" HorizontalAlignment="Left" Margin="157,103,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Button_StartStop" Content="Run" HorizontalAlignment="Left" Margin="157,151,0,0" VerticalAlignment="Top" Width="205" Height="29" Click="Button_StartStop_Click"/>
+        <Label Content="(0 - only start page)" HorizontalAlignment="Left" Margin="157,43,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
